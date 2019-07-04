@@ -9,4 +9,5 @@ for i in range(800000, 800500):
         print(c)
         results.append(c)
 
-pickle.dump(results, "data.pickle")
+f = open("data.pickle", "wb")
+pickle.dump(results, f)
